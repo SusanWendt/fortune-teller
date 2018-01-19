@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class FortuneTeller {
 	public static void main(String[] args) {
+		// USER INPUT
 		// [X] Ask the user for the user’s first name.
 		// [X] Ask the user for the user’s last name.
 		// [X] Ask the user for the user’s age.
@@ -51,9 +52,15 @@ public class FortuneTeller {
 		if (siblingsNumber < 0) {
 			vacation = "Anarctica";
 		} if (siblingsNumber == 0) {
+			vacation = "Ohio";
+		} if (siblingsNumber == 1) {
 			vacation = "North Carolina";
-		} if (siblingsNumber > 0) {
-			vacation = "Bahamas";
+		} if (siblingsNumber == 2) {
+			vacation = "California";
+		} if (siblingsNumber == 3) {
+			vacation = "Mexico";
+		} if (siblingsNumber > 3) {
+			vacation = "Austraila";
 		}
 		
 		// The user’s mode of transportation will determined by the user’s favorite color.
@@ -88,22 +95,20 @@ public class FortuneTeller {
 		
 		if(birthMonth >= 1 && birthMonth <= 4) {
 			bank = "$1,000.00";
-		}
-		
-		if(birthMonth >= 5 && birthMonth <= 8) {
+		} else if(birthMonth >= 5 && birthMonth <= 8) {
 			bank = "$10,000.00";
-		}
-		
-		if(birthMonth >= 9 && birthMonth <= 12) {
+		} else if(birthMonth >= 9 && birthMonth <= 12) {
 			bank = "$100,000.00";
-		}
-		
-		if(birthMonth <= 0) {
+		} else {
 			bank = "$0.00";
 		}
-		System.out.println(firstName + " " + lastName + " will retire in " + retirement + " with " + bank + " in the bank " + " and a vacation home in " + vacation + ", and travel by " + transport + ".");
+		
 		// FINAL RESPONSE: *[First Name]* *[Last Name]* will retire in *[# of years]* with *[bank balance]* in the bank,
 		// a vacation home in *[location]*, and travel by *[mode of transporation]*.
-		
+		System.out.println(firstName + " " + lastName + " will retire in " + retirement + " with " + bank + " in the bank," + " a vacation home in " + vacation + ", and travel by " + transport + ".");
+
+		// STRETCH: Give the user the ability to quit the program by typing “Quit” (should not be case sensitive) 
+		// at any point where the program is looking for user input. 
+		// The program should print “Nobody likes a quitter…” before ending.
 	}
 }
