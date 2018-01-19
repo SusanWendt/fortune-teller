@@ -107,7 +107,7 @@ public class FortuneTeller {
 		// a vacation home in *[location]*, and travel by *[mode of transporation]*.
 		System.out.println(firstName + " " + lastName + " will retire in " + retirement + " with " + bank + " in the bank," + " a vacation home in " + vacation + ", and travel by " + transport + ".");
 
-		// STRETCH: Give the user the ability to quit the program by typing “Quit” (should not be case sensitive) 
+		// STRETCH 1: Give the user the ability to quit the program by typing “Quit” (should not be case sensitive) 
 		// at any point where the program is looking for user input. 
 		// The program should print “Nobody likes a quitter…” before ending.
 	}
