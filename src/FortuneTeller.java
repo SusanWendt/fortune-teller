@@ -84,7 +84,7 @@ public class FortuneTeller {
 		if(color.equalsIgnoreCase("Indigo")) {
 			transport = "Private Jet";
 		}		
-		if(color.equalsIgnoreCase("Indigo")) {
+		if(color.equalsIgnoreCase("Violet")) {
 			transport = "Bicycle";
 		}
 		
